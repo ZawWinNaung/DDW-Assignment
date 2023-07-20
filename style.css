@@ -1,0 +1,128 @@
+@font-face {
+  font-family: mona-sans;
+  src: url(assets/fonts/Mona-Sans.ttf);
+}
+
+@font-face {
+  font-family: hubot-sans;
+  src: url(assets/fonts/Hubot-Sans.ttf);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #0d1117;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  font-family: mona-sans;
+  transition: 0.3s;
+}
+
+.nav_bar {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+nav a:hover {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  /* large size */
+  nav {
+    text-align: right;
+  }
+
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) and (min-width: 700px) {
+  /* medium */
+  #menu {
+    display: block;
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+  }
+
+  nav {
+    text-align: right;
+  }
+
+  nav a {
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    margin: 0.8rem 0rem;
+    padding: 0.5rem;
+    /* visibility: hidden; */
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #menu {
+    display: block;
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+  }
+
+  nav {
+    text-align: right;
+  }
+
+  nav a {
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    margin: 0.8rem 0rem;
+    padding: 0.5rem;
+    /* visibility: hidden; */
+  }
+}
+
+#header {
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(
+      to bottom,
+      rgba(13, 17, 23, 0.3),
+      rgba(13, 17, 23, 1)
+    ),
+    url("assets/images/img_slide_1.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.intro_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4rem;
+}
+
+#intro_para {
+  color: white;
+  margin-right: 1rem;
+  font-size: large;
+  font-family: hubot-sans;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: end;
+}
