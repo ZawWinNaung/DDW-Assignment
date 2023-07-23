@@ -17,7 +17,7 @@ const changeImage = () => {
     i = 0;
   }
   header.style.backgroundImage =
-    "linear-gradient(to bottom,rgba(13, 17, 23, 0.3),rgba(13, 17, 23, 1)),url(../../assets/images/" +
+    "linear-gradient(to bottom,rgba(13, 17, 23, 0.3),rgba(13, 17, 23, 1)),url(assets/images/" +
     images[i] +
     ")";
 };

@@ -1,11 +1,11 @@
 @font-face {
   font-family: mona-sans;
-  src: url(assets/fonts/Mona-Sans.ttf);
+  src: url(../../assets/fonts/Mona-Sans.ttf);
 }
 
 @font-face {
   font-family: hubot-sans;
-  src: url(assets/fonts/Hubot-Sans.ttf);
+  src: url(../../assets/fonts/Hubot-Sans.ttf);
 }
 
 * {
@@ -51,15 +51,13 @@ nav a:hover {
         rgba(13, 17, 23, 0.3),
         rgba(13, 17, 23, 1)
       ),
-      url("assets/images/img_slide_1.jpg");
+      url("../../assets/images/img_slide_1.jpg");
     background-size: cover;
     background-position: bottom;
   }
 
   .item {
     width: 30%;
-    color: white;
-    margin: 1rem auto;
   }
 
   nav {
@@ -89,8 +87,6 @@ nav a:hover {
 
   .item {
     width: 45%;
-    color: white;
-    margin: 1rem auto;
   }
 
   #menu {
@@ -132,8 +128,6 @@ nav a:hover {
 
   .item {
     width: 90%;
-    color: white;
-    margin: 1rem auto;
   }
   #menu {
     display: block;
@@ -173,17 +167,35 @@ nav a:hover {
   text-align: end;
 }
 
+.page_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.page_title h1 {
+  font-family: mona-sans;
+  color: white;
+  font-size: 3rem;
+}
+
 footer {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background-image: url("assets/images/img_footer_bg.jpeg");
   text-align: center;
-  padding: 1rem;
   text-decoration: none;
   font-weight: 500;
   color: white;
   font-family: mona-sans;
+  background-size: cover;
+  background-position: top;
+}
+
+.footerContent {
+  /* background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+  padding: 1rem;
 }
 
 footer p {
@@ -204,4 +216,53 @@ footer p {
 .itemContainer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.item {
+  background-color: #21262d;
+  color: white;
+  margin: 1rem auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+}
+
+.itemContent {
+  padding: 1rem;
+}
+
+.item h1 {
+  font-family: hubot-sans;
+  margin: 0.5rem 0;
+}
+
+.item h2 {
+  font-family: hubot-sans;
+  margin: 0.5rem 0;
+}
+
+.item p {
+  font-family: hubot-sans;
+  text-align: justify;
+  line-height: 150%;
+}
+
+.item button {
+  background-color: #89929b;
+  color: #ecf2f8;
+  border-radius: 10px;
+  border-color: #c6cdd5;
+  border-width: 1px;
+  font-family: mona-sans;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  transition: 0.5s;
+}
+
+.item button:hover {
+  background-color: #7ce38b;
+  color: black;
 }
