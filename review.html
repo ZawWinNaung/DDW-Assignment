@@ -15,22 +15,112 @@
   </head>
   <body onload="setInterval(changeImage,5000)">
     <header id="header">
-      <div class="nav_bar">
-        <nav class="nav_menu">
-          <span><i id="menu" class="fa-solid fa-bars"></i></span>
-          <a href="index.html">Home</a>
-          <a href="equipment.html">Equipment</a>
-          <a href="furniture.html">Furniture</a>
-          <a href="review.html">Review</a>
-          <a href="basket.html">Basket</a>
-          <a href="offer.html">Offer and Packages</a>
-        </nav>
-      </div>
+      <my-navbar></my-navbar>
       <div class="page_title">
         <h1>Review</h1>
       </div>
+      <div class="review">
+        <form action="review.html" method="post" id="review_form">
+          <h2>Please, review our store!</h2>
+          <div class="row">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required />
+          </div>
+          <div class="row">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" required />
+          </div>
+          <div class="row">
+            <label for="review">Review</label>
+            <textarea name="" id="review" rows="10"></textarea>
+          </div>
+          <input type="submit" value="Submit" id="btn_submit" />
+        </form>
+      </div>
     </header>
-    <section></section>
+    <section>
+      <div class="review_container">
+        <div class="user_review">
+          <div id="name_stars">
+            <div id="person"><i class="fa-solid fa-user"></i> John Doe</div>
+            <div id="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Very good page so far. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+        </div>
+        <div class="user_review">
+          <div id="name_stars">
+            <div id="person"><i class="fa-solid fa-user"></i>Jane Foster</div>
+            <div id="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Very good page so far. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+        </div>
+        <div class="user_review">
+          <div id="name_stars">
+            <div id="person"><i class="fa-solid fa-user"></i>Jason Todd</div>
+            <div id="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <p>Very good page so far.</p>
+        </div>
+        <div class="user_review">
+          <div id="name_stars">
+            <div id="person">
+              <i class="fa-solid fa-user"></i>Karen Anderson
+            </div>
+            <div id="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Delivery time is a little bit more than expected but everything is
+            fine.
+          </p>
+        </div>
+        <div class="user_review">
+          <div id="name_stars">
+            <div id="person"><i class="fa-solid fa-user"></i>John Williams</div>
+            <div id="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Very good page so far. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footerContent">
         <my-footer></my-footer>
