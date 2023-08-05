@@ -413,7 +413,6 @@ footer p {
 }
 
 .user_review p {
-  font-family: hubot-sans;
   text-align: justify;
   line-height: 120%;
   margin-top: 1rem;
@@ -427,4 +426,17 @@ footer p {
 #name_stars {
   display: flex;
   justify-content: space-between;
+}
+
+.basket {
+  background-color: #21262d;
+  margin: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.basket p {
+  color: white;
+  font-family: mona-sans;
 }

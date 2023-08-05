@@ -14,10 +14,11 @@ const changeImage = () => {
 const addToBasket = (btn) => {
   let item = btn.parentNode;
   let children = item.children;
-  let name = children[0];
-  let price = children[1];
+  let name = children[0].innerText;
+  let price = children[1].innerText;
   let str = "<div class='basket'>";
-  str += name + price;
+  str += "<p>" + name + "</p>";
+  str += "<p>" + price + "</p>";
   str += "</div>";
 
   if (sessionStorage.getItem("basket") == null) {
@@ -26,7 +27,6 @@ const addToBasket = (btn) => {
     let prev = sessionStorage.getItem("basket");
     prev += str;
     sessionStorage.setItem("basket", prev);
-    alert(sessionStorage.getItem("basket"));
   }
 };
 
