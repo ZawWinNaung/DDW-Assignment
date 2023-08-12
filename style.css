@@ -1,11 +1,11 @@
 @font-face {
   font-family: mona-sans;
-  src: url(../../assets/fonts/Mona-Sans.ttf);
+  src: url(assets/fonts/Mona-Sans.ttf);
 }
 
 @font-face {
   font-family: hubot-sans;
-  src: url(../../assets/fonts/Hubot-Sans.ttf);
+  src: url(assets/fonts/Hubot-Sans.ttf);
 }
 
 * {
@@ -100,6 +100,20 @@ nav a:hover {
   .user_review {
     width: 30%;
   }
+
+  .search_input {
+    width: 300px;
+    height: 40px;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+
+  .ico {
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 999px) and (min-width: 700px) {
@@ -168,6 +182,20 @@ nav a:hover {
   .user_review {
     width: 45%;
   }
+
+  .search_input {
+    width: 250px;
+    height: 35px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .ico {
+    top: 12px;
+    left: 15px;
+    bottom: 15px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 699px) {
@@ -234,6 +262,20 @@ nav a:hover {
   .user_review {
     width: 90%;
   }
+
+  .search_input {
+    width: 200px;
+    height: 30px;
+    padding-left: 50px;
+    font-size: 16px;
+  }
+
+  .ico {
+    top: 12px;
+    left: 15px;
+    bottom: 15px;
+    font-size: 16px;
+  }
 }
 
 .intro_container {
@@ -274,10 +316,6 @@ footer {
 }
 
 .footerContent {
-  /* background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); */
   padding: 1rem;
 }
 
@@ -439,4 +477,56 @@ footer p {
 .basket p {
   color: white;
   font-family: mona-sans;
+}
+
+/* jquery search button */
+.form {
+  position: fixed;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+
+.search_input {
+  padding-left: 50px;
+  border-radius: 50px;
+  background-color: transparent;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+  font-family: mona-sans;
+  outline: none;
+}
+
+.ico {
+  position: absolute;
+  color: white;
+}
+
+.blink {
+  transform: rotate(90deg);
+  animation: outFocus 1s infinite ease-in-out;
+}
+
+.search {
+  transition: 1s;
+  animation: onFocus 1s 1 ease-in-out;
+}
+
+@keyframes outFocus {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
+
+@keyframes onFocus {
+  to {
+    transform: rotateY(0deg);
+  }
+  from {
+    transform: rotateY(90deg);
+  }
 }

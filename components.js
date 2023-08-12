@@ -25,6 +25,10 @@ class MyNavBar extends HTMLElement {
     this.innerHTML = `
     <div class="nav_bar">
     <nav class="nav_menu">
+      <div class="form">
+        <input class="search_input" type="text" placeholder="Search Items">
+        <span class="fas ico"></span>
+      </div>
       <span><i id="menu" class="fa-solid fa-bars"></i></span>
       <a href="index.html">Home</a>
       <a href="equipment.html">Equipment</a>
