@@ -69,10 +69,15 @@ nav a:hover {
 
   nav {
     text-align: right;
+    height: 68px;
   }
 
   #menu {
     display: none;
+  }
+
+  #nav-links {
+    display: block;
   }
 
   .page_title {
@@ -141,10 +146,13 @@ nav a:hover {
     text-align: right;
     color: white;
     font-size: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.8rem;
   }
 
   nav {
     text-align: right;
+    height: 60px;
   }
 
   nav a {
@@ -154,7 +162,12 @@ nav a:hover {
     color: white;
     margin: 0.8rem 0rem;
     padding: 0.5rem;
-    /* visibility: hidden; */
+  }
+
+  #nav-links {
+    display: none;
+    background-color: #21262d;
+    margin-top: 0.9rem;
   }
 
   .page_title {
@@ -202,7 +215,7 @@ nav a:hover {
   /* small size */
   #header {
     width: 100%;
-    height: 700px;
+    height: 400px;
     background: linear-gradient(
         to bottom,
         rgba(13, 17, 23, 0.3),
@@ -221,10 +234,13 @@ nav a:hover {
     text-align: right;
     color: white;
     font-size: 2rem;
+    padding-top: 0.6rem;
+    margin-right: 1rem;
   }
 
   nav {
     text-align: right;
+    height: 55px;
   }
 
   nav a {
@@ -234,7 +250,12 @@ nav a:hover {
     color: white;
     margin: 0.8rem 0rem;
     padding: 0.5rem;
-    /* visibility: hidden; */
+  }
+
+  #nav-links {
+    display: none;
+    background-color: #21262d;
+    margin-top: 0.8rem;
   }
 
   .page_title {
@@ -276,12 +297,6 @@ nav a:hover {
     bottom: 15px;
     font-size: 16px;
   }
-}
-
-.intro_container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 4rem;
 }
 
 #intro_para {
@@ -533,4 +548,40 @@ footer p {
 
 .pop-up-title {
   font-family: mona-sans;
+}
+
+#mapid {
+  width: 500px;
+  height: 380px;
+  border-radius: 10px;
+}
+
+#map-title {
+  font-family: mona-sans;
+  color: white;
+}
+
+.discount-content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount-content p {
+  font-family: mona-sans;
+  color: white;
+  font-size: medium;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* background: linear-gradient(
+    to bottom,
+    rgba(13, 17, 23, 0.3),
+    rgba(13, 17, 23, 1)
+  ); */
 }

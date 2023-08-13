@@ -52,3 +52,46 @@ $(document).ready(function () {
     $(".ico").removeClass("fa-search search");
   });
 });
+
+var map = L.map("mapid").setView([51.505, -0.09], 17);
+
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution: "© OpenStreetMap",
+}).addTo(map);
+
+var marker = L.marker([51.505, -0.09]).addTo(map);
+
+marker.bindPopup("<b>RCC</b><br>Retail Camping Company").openPopup();
+
+var width = window.matchMedia("(min-width: 1000px)");
+try {
+  width.addEventListener("change", () => {
+    var menu = document.getElementById("nav-links");
+    var navBar = document.getElementById("navBar");
+    if (width.matches) {
+      menu.style.display = "block";
+      navBar.style.background = "rgba(255, 255, 255, 0.2)";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+} catch (e) {
+  console.error(e);
+}
+
+function onMenuPress() {
+  var menu = document.getElementById("nav-links");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+
+  var navBar = document.getElementById("navBar");
+  if (menu.style.display === "block") {
+    navBar.style.background = "#0d1117";
+  } else {
+    navBar.style.background = "rgba(255, 255, 255, 0.2)";
+  }
+}
