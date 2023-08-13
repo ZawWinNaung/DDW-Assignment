@@ -58,7 +58,7 @@ nav a:hover {
         rgba(13, 17, 23, 0.3),
         rgba(13, 17, 23, 1)
       ),
-      url("../../assets/images/img_slide_1.jpg");
+      url("assets/images/img_slide_1.jpg");
     background-size: cover;
     background-position: bottom;
   }
@@ -529,4 +529,8 @@ footer p {
   from {
     transform: rotateY(90deg);
   }
+}
+
+.pop-up-title {
+  font-family: mona-sans;
 }

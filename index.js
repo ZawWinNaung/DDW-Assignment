@@ -28,6 +28,13 @@ const addToBasket = (btn) => {
     prev += str;
     sessionStorage.setItem("basket", prev);
   }
+
+  $().msgpopup({
+    text: name + " is successfully added to basket.",
+    success: true,
+    time: 5000,
+    x: true,
+  });
 };
 
 const showData = () => {
