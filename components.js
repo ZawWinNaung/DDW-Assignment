@@ -25,12 +25,9 @@ class MyNavBar extends HTMLElement {
     this.innerHTML = `
     <div class="nav_bar" id="navBar">
     <nav class="nav_menu">
-      <div class="form">
-        <input class="search_input" type="text" placeholder="Search Items">
-        <span class="fas ico"></span>
-      </div>
-      <span><i id="menu" class="fa-solid fa-bars" onclick="onMenuPress()"></i></span>
-      <div id="nav-links">
+    <span><i id="menu" class="fa-solid fa-bars" onclick="onMenuPress()"></i></span>
+      <div><img id="logo" src="assets/images/logo.png" alt="Logo"></div>
+      <div id="desktop-nav">
         <a href="index.html">Home</a>
         <a href="equipment.html">Equipment</a>
         <a href="furniture.html">Furniture</a>
@@ -38,7 +35,19 @@ class MyNavBar extends HTMLElement {
         <a href="basket.html">Basket</a>
         <a href="offer.html">Offer and Packages</a>
       </div>
+      <div class="form">
+        <input class="search_input" type="text" placeholder="Search Items">
+        <span class="fas ico"></span>
+      </div>
     </nav>
+    <div id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="furniture.html">Furniture</a>
+      <a href="review.html">Review</a>
+      <a href="basket.html">Basket</a>
+      <a href="offer.html">Offer and Packages</a>
+      </div>
   </div>
       `;
   }

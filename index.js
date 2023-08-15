@@ -67,13 +67,11 @@ marker.bindPopup("<b>RCC</b><br>Retail Camping Company").openPopup();
 var width = window.matchMedia("(min-width: 1000px)");
 try {
   width.addEventListener("change", () => {
-    var menu = document.getElementById("nav-links");
+    var menu = document.getElementById("mobile-nav");
     var navBar = document.getElementById("navBar");
     if (width.matches) {
-      menu.style.display = "block";
-      navBar.style.background = "rgba(255, 255, 255, 0.2)";
-    } else {
       menu.style.display = "none";
+      navBar.style.background = "rgba(255, 255, 255, 0.2)";
     }
   });
 } catch (e) {
@@ -81,15 +79,15 @@ try {
 }
 
 function onMenuPress() {
-  var menu = document.getElementById("nav-links");
-  if (menu.style.display === "block") {
+  var menu = document.getElementById("mobile-nav");
+  if (menu.style.display === "flex") {
     menu.style.display = "none";
   } else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
   }
 
   var navBar = document.getElementById("navBar");
-  if (menu.style.display === "block") {
+  if (menu.style.display === "flex") {
     navBar.style.background = "#0d1117";
   } else {
     navBar.style.background = "rgba(255, 255, 255, 0.2)";

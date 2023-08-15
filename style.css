@@ -26,12 +26,13 @@ footer {
 nav a {
   padding: 0.5rem 1rem;
   margin: 1rem 0rem;
-  display: inline-block;
+  display: inline;
   text-decoration: none;
   font-weight: 500;
   color: white;
   font-family: mona-sans;
   transition: 0.3s;
+  float: left;
 }
 
 .nav_bar {
@@ -40,11 +41,38 @@ nav a {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+  flex-direction: row;
 }
 
 nav a:hover {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
   /* font-size: large; */
+}
+
+#logo {
+  float: left;
+}
+
+#mobile-nav {
+  background-color: #21262d;
+  flex-direction: column;
+  width: 100%;
+}
+
+#mobile-nav a {
+  text-decoration: none;
+  color: white;
+  font-family: mona-sans;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+#mobile-nav a:hover {
+  font-size: x-large;
+}
+
+::placeholder {
+  color: whitesmoke;
 }
 
 @media screen and (min-width: 1000px) {
@@ -72,11 +100,20 @@ nav a:hover {
     height: 68px;
   }
 
+  #logo {
+    width: 90px;
+    height: 68px;
+  }
+
   #menu {
     display: none;
   }
 
-  #nav-links {
+  #mobile-nav {
+    display: none;
+  }
+
+  #desktop-nav {
     display: block;
   }
 
@@ -146,8 +183,9 @@ nav a:hover {
     text-align: right;
     color: white;
     font-size: 2rem;
-    margin-right: 1rem;
+    margin-left: 1rem;
     padding-top: 0.8rem;
+    float: left;
   }
 
   nav {
@@ -164,10 +202,17 @@ nav a:hover {
     padding: 0.5rem;
   }
 
-  #nav-links {
+  #logo {
+    width: 80px;
+    height: 60px;
+  }
+
+  #mobile-nav {
     display: none;
-    background-color: #21262d;
-    margin-top: 0.9rem;
+  }
+
+  #desktop-nav {
+    display: none;
   }
 
   .page_title {
@@ -231,11 +276,11 @@ nav a:hover {
   }
   #menu {
     display: block;
-    text-align: right;
     color: white;
     font-size: 2rem;
     padding-top: 0.6rem;
-    margin-right: 1rem;
+    margin-left: 1rem;
+    float: left;
   }
 
   nav {
@@ -252,10 +297,17 @@ nav a:hover {
     padding: 0.5rem;
   }
 
-  #nav-links {
+  #logo {
+    width: 80px;
+    height: 56px;
+  }
+
+  #desktop-nav {
     display: none;
-    background-color: #21262d;
-    margin-top: 0.8rem;
+  }
+
+  #mobile-nav {
+    display: none;
   }
 
   .page_title {
@@ -285,7 +337,7 @@ nav a:hover {
   }
 
   .search_input {
-    width: 200px;
+    width: 160px;
     height: 30px;
     padding-left: 50px;
     font-size: 16px;
@@ -496,10 +548,11 @@ footer p {
 
 /* jquery search button */
 .form {
-  position: fixed;
+  position: relative;
   flex-direction: row;
-  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 0.6rem;
+  float: right;
 }
 
 .search_input {
