@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 #mobile-nav a:hover {
-  font-size: x-large;
+  background-color: #89929b;
 }
 
 ::placeholder {
@@ -632,9 +632,6 @@ footer p {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2rem;
-  /* background: linear-gradient(
-    to bottom,
-    rgba(13, 17, 23, 0.3),
-    rgba(13, 17, 23, 1)
-  ); */
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
