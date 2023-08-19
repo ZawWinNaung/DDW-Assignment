@@ -561,12 +561,12 @@ footer p {
   margin-top: 1rem;
 }
 
-#person {
+.person {
   font-size: 1.2rem;
   font-family: mona-sans;
 }
 
-#name_stars {
+.name_stars {
   display: flex;
   justify-content: space-between;
 }
